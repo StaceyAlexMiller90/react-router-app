@@ -9,10 +9,10 @@ const NavBar = () => {
       <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to='/'>Home</NavLink>
       </li>
       <li>
-      <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/AboutPage">About</NavLink>
+      <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/about">About</NavLink>
       </li>
       <li>
-      <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/DiscoverMoviesPage">Discover Movies</NavLink>
+      <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/discover">Discover Mobies</NavLink>
       </li>
     </ul>
   )
