@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
-import DiscoverMobiesPage from './pages/DiscoverMobiesPage'
+import DiscoverMoviesPage from './pages/DiscoverMoviesPage'
 import { Switch, Route } from "react-router-dom";
 import NavBar from './components/NavBar'
+import MoviePage from './components/MoviePage'
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       />
       <NavBar />
       <Switch>
-        <Route path="/discover" component={DiscoverMobiesPage} />
+        <Route path="/movie/:imdb_id" component={MoviePage} />
+        <Route path="/discover/:searchtext" component={DiscoverMoviesPage} />
+        <Route path="/discover/" component={DiscoverMoviesPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/" component={HomePage} />
       </Switch>

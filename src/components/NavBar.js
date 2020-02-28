@@ -12,7 +12,7 @@ const NavBar = () => {
       <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/about">About</NavLink>
       </li>
       <li>
-      <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/discover">Discover Mobies</NavLink>
+      <NavLink activeStyle={{fontWeight: "bold",color: "red"}} exact to="/discover/">Discover Movies</NavLink>
       </li>
     </ul>
   )
